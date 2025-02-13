@@ -1,136 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo en NYC</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="./images/favicon.ico">
-</head>
-<body>
-    <header>
-        <h1>Nueva York</h1>
-        <p>Nueva York es una ciudad que nunca duerme, llena de energía, cultura y experiencias únicas en cada rincón. Desde los icónicos rascacielos de Manhattan hasta los rincones más escondidos de Brooklyn, hay algo para todos los gustos.</p>
-        <p>En este blog, te contaré qué hacer en Nueva York, desde los clásicos imprescindibles hasta planes alternativos que te harán sentir como un auténtico neoyorquino. ¿Listo para explorar la Gran Manzana?</p>
-    </header>
-    <div class="container menu">
-        <nav>
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#fichas">Lugares de interés</a></li>
-                <li><a href="#mapa">Mapa</a></li>
-                <li><a href="#barrios">Barrios</a></li>
-                <li><a href="#transporte">Transporte</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>    
-    <div class="container main">
-        <main>
-            <section id="gallery">
-                <h2>Galería de imágenes</h2>
-                <div class="gallery">
-                    <img src="./images/empire_state.jpg" alt="Empire State Building">
-                    <img src="./images/empire_state.jpg" alt="Empire State Building">
-                    <img src="./images/empire_state.jpg" alt="Empire State Building">
-                    <img src="./images/empire_state.jpg" alt="Empire State Building">
-                </div>
-            </section>
-            <section id="fichas">
-                <h2>Lugares de interés</h2>
-                <div class="fichas">
-                    <div>
-                        <h3>Empire State Building</h3>
-                        <img src="./images/empire_state.jpg" alt="Empire State Building">
-                    </div>
-                    <div>
-                        <h3>Estatua de la Libertad</h3>
-                        <img src="./images/statue_liberty.jpg" alt="Estatua de la Libertad">
-                    </div>
-                    <div>
-                        <h3>Central Park</h3>
-                        <img src="./images/central_park.jpg" alt="Central Park">
-                    </div>
-                    <div>
-                        <h3>Times Square</h3>
-                        <img src="./images/times_square.jpg" alt="Times Square">
-                    </div>
-                </div>
-            </section>
-            <section id="barrios">
-                <h2>Barrios</h2>
-                <img src="./images/boroughs-of-new-york-city-nyc.jpg" alt="Mapa de los barrios de Nueva York">
-                <div>
-                    <h3>Manhattan</h3>
-                    <h3>Brooklyn</h3>
-                    <h3>Bronx</h3>
-                    <h3>Queens</h3>
-                    <h3>Staten Island</h3>
-                </div>
-            </section>
-            <section id="mapa">
-                <h2>Mapa de la ciudad</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200378.52250227763!2d-73.98202225581598!3d40.79221095638935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1738263475499!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-            <section id="transporte">
-                <h2>Transporte en Nueva York</h2>
-                <article>
-                    <h3>🚖 Taxi amarillo</h3>
-                    <img src="./images/Yellow-Cab-6.jpg" alt="Taxi amarillo de Nueva York" width="300">
-                    <p>El clásico taxi amarillo es una opción cómoda, aunque no la más barata.</p>
-                    <p><strong>Tarifas:</strong></p>
-                    <ul>
-                        <li>Bajada de bandera: $3.00</li>
-                        <li>Por cada 320 metros: $0.70</li>
-                        <li>Suplemento nocturno (20:00 - 06:00): $1.00</li>
-                        <li>Suplemento de hora punta (16:00 - 20:00): $2.50</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>🚇 Metro de Nueva York</h3>
-                    <img src="./images/Metro-NEw-York.webp" alt="Metro de Nueva York" width="300">
-                    <p>El metro es la forma más rápida y económica de moverse por la ciudad.</p>
-                    <p><strong>Tarifas:</strong></p>
-                    <ul>
-                        <li>Billete sencillo: $2.90</li>
-                        <li>Unlimited Ride 7 días: $34.00</li>
-                        <li>Unlimited Ride 30 días: $132.00</li>
-                    </ul>
-                    <p><strong>Principales líneas de metro:</strong></p>
-                    <img src="./images/Subway-Map-2-scaled.jpg" alt="Mapa del metro de Nueva York" width="300">
-                    <ul>
-                        <li>🟢 Líneas 4, 5, 6 (Lexington Avenue Line)</li>
-                        <li>🔵 Líneas A, C, E (Eighth Avenue Line)</li>
-                        <li>🟡 Líneas N, Q, R, W (Broadway Line)</li>
-                        <li>🔴 Líneas 1, 2, 3 (Seventh Avenue Line)</li>
-                        <li>🟠 Líneas B, D, F, M (Sixth Avenue Line)</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>🚌 Autobús</h3>
-                    <img src="./images/mta-bus-nyc2.jpg" alt="Autobús de Nueva York" width="300">
-                    <p>Los autobuses son una buena opción para trayectos cortos y disfrutar del paisaje.</p>
-                    <p><strong>Tarifas:</strong></p>
-                    <ul>
-                        <li>Billete sencillo: $2.90</li>
-                        <li>Transferencias gratuitas entre metro y bus con la MetroCard</li>
-                    </ul>
-                </article>
-            </section>
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <form method="get">
-                    <input type="text" name="nombre" placeholder="Nombre" required><br>
-                    <input type="email" name="mail" placeholder="Email" required><br>
-                    <textarea name="mensaje" placeholder="Mensaje" required style="resize: none;"></textarea><br>
-                    <input type="submit" value="Enviar">
-                </form>
-            </section>
-        </main>
-    </div>
-   <!--  -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -143,148 +10,72 @@
 <body>
     <header>
         <h1>Nueva York</h1>
+        <p>Descubre la ciudad que nunca duerme</p>
     </header>
+    <nav class="menu">
+        <a href="#gallery">Galería</a>
+        <a href="#fichas">Lugares de interés</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#barrios">Barrios</a>
+        <a href="#transporte">Transporte</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
     <div class="container">
-        <div class="menu">
-            <div class="heading">Menú</div>
-            <div class="contenido">
-                <ul>
-                    <li><a href="#gallery">Galería</a></li>
-                    <li><a href="#fichas">Lugares de interés</a></li>
-                    <li><a href="#mapa">Mapa</a></li>
-                    <li><a href="#barrios">Barrios</a></li>
-                    <li><a href="#transporte">Transporte</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+        <main>
+        <section id="gallery" class="section">
+            <h2>Galería de imágenes</h2>
+            <div class="gallery">
+                <img src="./images/empire_state.jpg" alt="Empire State Building">
+                <img src="./images/statue_liberty.jpg" alt="Estatua de la Libertad">
+                <img src="./images/central_park.jpg" alt="Central Park">
+                <img src="./images/times_square.jpg" alt="Times Square">
             </div>
-        </div>
-        <div class="main-content">
-            <div class="heading">Contenido principal</div>
-            <div class="contenido">
-                <section id="gallery">
-                    <h2>Galería de imágenes</h2>
-                    <div class="gallery">
-                        <img src="./images/empire_state.jpg" alt="Empire State Building">
-                        <img src="./images/empire_state.jpg" alt="Empire State Building">
-                        <img src="./images/empire_state.jpg" alt="Empire State Building">
-                        <img src="./images/empire_state.jpg" alt="Empire State Building">
-                    </div>
-                </section>
-                <section id="fichas">
-                    <h2>Lugares de interés</h2>
-                    <div class="fichas">
-                        <div>
-                            <h3>Empire State Building</h3>
-                            <img src="./images/empire_state.jpg" alt="Empire State Building">
-                        </div>
-                        <div>
-                            <h3>Estatua de la Libertad</h3>
-                            <img src="./images/statue_liberty.jpg" alt="Estatua de la Libertad">
-                        </div>
-                        <div>
-                            <h3>Central Park</h3>
-                            <img src="./images/central_park.jpg" alt="Central Park">
-                        </div>
-                        <div>
-                            <h3>Times Square</h3>
-                            <img src="./images/times_square.jpg" alt="Times Square">
-                        </div>
-                    </div>
-                </section>
-                <section id="barrios">
-                    <h2>Barrios</h2>
-                    <img src="./images/boroughs-of-new-york-city-nyc.jpg" alt="Mapa de los barrios de Nueva York">
-                    <div>
-                        <h3>Manhattan</h3>
-                        <h3>Brooklyn</h3>
-                        <h3>Bronx</h3>
-                        <h3>Queens</h3>
-                        <h3>Staten Island</h3>
-                    </div>
-                </section>
-                <section id="mapa">
-                    <h2>Mapa de la ciudad</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200378.52250227763!2d-73.98202225581598!3d40.79221095638935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1738263475499!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </section>
-                <section id="transporte">
-                    <h2>Transporte en Nueva York</h2>
-                    <article>
-                        <h3>🚖 Taxi amarillo</h3>
-                        <img src="./images/Yellow-Cab-6.jpg" alt="Taxi amarillo de Nueva York" width="300">
-                        <p>El clásico taxi amarillo es una opción cómoda, aunque no la más barata.</p>
-                        <p><strong>Tarifas:</strong></p>
-                        <ul>
-                            <li>Bajada de bandera: $3.00</li>
-                            <li>Por cada 320 metros: $0.70</li>
-                            <li>Suplemento nocturno (20:00 - 06:00): $1.00</li>
-                            <li>Suplemento de hora punta (16:00 - 20:00): $2.50</li>
-                        </ul>
-                    </article>
-                    <article>
-                        <h3>🚇 Metro de Nueva York</h3>
-                        <img src="./images/Metro-NEw-York.webp" alt="Metro de Nueva York" width="300">
-                        <p>El metro es la forma más rápida y económica de moverse por la ciudad.</p>
-                        <p><strong>Tarifas:</strong></p>
-                        <ul>
-                            <li>Billete sencillo: $2.90</li>
-                            <li>Unlimited Ride 7 días: $34.00</li>
-                            <li>Unlimited Ride 30 días: $132.00</li>
-                        </ul>
-                        <p><strong>Principales líneas de metro:</strong></p>
-                        <img src="./images/Subway-Map-2-scaled.jpg" alt="Mapa del metro de Nueva York" width="300">
-                        <ul>
-                            <li>🟢 Líneas 4, 5, 6 (Lexington Avenue Line)</li>
-                            <li>🔵 Líneas A, C, E (Eighth Avenue Line)</li>
-                            <li>🟡 Líneas N, Q, R, W (Broadway Line)</li>
-                            <li>🔴 Líneas 1, 2, 3 (Seventh Avenue Line)</li>
-                            <li>🟠 Líneas B, D, F, M (Sixth Avenue Line)</li>
-                        </ul>
-                    </article>
-                    <article>
-                        <h3>🚌 Autobús</h3>
-                        <img src="./images/mta-bus-nyc2.jpg" alt="Autobús de Nueva York" width="300">
-                        <p>Los autobuses son una buena opción para trayectos cortos y disfrutar del paisaje.</p>
-                        <p><strong>Tarifas:</strong></p>
-                        <ul>
-                            <li>Billete sencillo: $2.90</li>
-                            <li>Transferencias gratuitas entre metro y bus con la MetroCard</li>
-                        </ul>
-                    </article>
-                </section>
-                <section id="contacto">
-                    <h2>Contacto</h2>
-                    <form method="get">
-                        <input type="text" name="nombre" placeholder="Nombre" required><br>
-                        <input type="email" name="mail" placeholder="Email" required><br>
-                        <textarea name="mensaje" placeholder="Mensaje" required style="resize: none;"></textarea><br>
-                        <input type="submit" value="Enviar">
-                    </form>
-                </section>
+        </section>
+        <section id="fichas" class="section">
+            <h2>Lugares de interés</h2>
+            <div class="fichas">
+                <div><h3>Empire State Building</h3><img src="./images/empire_state.jpg"></div>
+                <div><h3>Estatua de la Libertad</h3><img src="./images/statue_liberty.jpg"></div>
+                <div><h3>Central Park</h3><img src="./images/central_park.jpg"></div>
+                <div><h3>Times Square</h3><img src="./images/times_square.jpg"></div>
             </div>
+        </section>
+        <section id="mapa" class="section">
+            <h2>Mapa de la ciudad</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45957.93511760493!2d-73.9880665284829!3d40.764408326941385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e1!3m2!1ses!2ses!4v1739449820360!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+        <section id="barrios" class="section">
+            <h2>Barrios más visitados</h2>
+            <ul>
+                <li>Soho</li>
+                <li>Tribeca</li>
+                <li>Chelsea</li>
+                <li>Bronx</li>
+                <li>Staten Island</li>
+            </ul>
+        </section>
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xqaebrkn" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="mail" placeholder="Email" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <section class ="noticias">
+        <h2>Noticias</h2>
+        <div class="noticia">
+            <h3>Empire State Building remodelado</h3>
+            <p>El edificio ha sido remodelado para mejorar su diseño y seguridad.</p>
+            <a href="#">Leer más</a>
         </div>
-        <div class="news">
-            <div class="heading">Últimas noticias</div>
-            <div class="contenido">
-                <article>
-                    <h3>Nueva York aumentará el salario mínimo en 2025: un impulso para los trabajadores y la economía</h3>
-                    <p>El estado de Nueva York ha anunciado un importante aumento en el salario mínimo a partir de 2025, una medida que beneficiará a miles de trabajadores y que busca contrarrestar el alto costo de vida en la región. La gobernadora Kathy Hochul presentó la iniciativa como parte de un plan para mejorar las condiciones laborales y fortalecer la economía local.</p>
-                    <p>El incremento salarial impactará a empleados de diversas industrias, desde la hostelería hasta el comercio minorista, y se espera que tenga efectos positivos tanto para los trabajadores como para los negocios. Con un mayor poder adquisitivo, los ciudadanos podrán invertir más en bienes y servicios, lo que a su vez impulsará la actividad económica en los cinco distritos de la ciudad.</p>
-                    <p>Sin embargo, algunos expertos han señalado que este aumento también podría representar un desafío para pequeñas empresas, que podrían verse obligadas a ajustar sus precios o reducir su plantilla para hacer frente a los costos adicionales. A pesar de ello, el gobierno local confía en que esta medida ayudará a reducir la desigualdad y mejorar la calidad de vida de miles de neoyorquinos.</p>
-                    <p>Con este incremento, Nueva York continúa su tendencia de liderar cambios laborales progresistas en los Estados Unidos, asegurando mejores condiciones para sus ciudadanos y posicionándose como un referente en la lucha por salarios dignos.</p>
-                    <a href="https://larepublica.pe/estados-unidos/2025/01/24/buenas-noticias-para-trabajadores-en-nueva-york-kathy-hochul-trae-importante-aumento-salarial-en-2025-lrtmus-1226568">Link a la noticia</a>
-                </article>
-                <article>
-                    <h3>El turismo sigue siendo un pilar clave para la economía de Nueva York: 76.000 millones de euros en 2024</h3>
-                    <p>Nueva York sigue consolidándose como uno de los destinos turísticos más importantes del mundo, y las cifras de 2024 lo demuestran. Según datos oficiales, el impacto económico total del turismo en la ciudad alcanzó los 76.000 millones de euros, con un gasto directo de 49.100 millones de euros en hoteles, restaurantes, espectáculos y otras actividades.</p>
-                    <p>Este crecimiento representa un importante resurgimiento del sector tras los difíciles años de la pandemia, en los que la afluencia de turistas se redujo drásticamente. Ahora, con la recuperación en marcha, Nueva York ha vuelto a recibir millones de visitantes de todo el mundo, atraídos por su icónica oferta cultural, sus rascacielos imponentes, su escena gastronómica y sus eventos de primer nivel.</p>
-                    <p>El impacto del turismo no solo se refleja en las cifras macroeconómicas, sino también en la creación de empleo. Miles de neoyorquinos trabajan en industrias relacionadas con el turismo, desde hoteles hasta guías turísticos y transporte. De hecho, sectores como el Broadway, que había sufrido un fuerte golpe con la crisis sanitaria, han experimentado un repunte significativo gracias a la afluencia de viajeros.</p>
-                    <p>A pesar del éxito del turismo, la ciudad sigue enfrentando desafíos, como la gestión de la masificación en algunos puntos turísticos y la necesidad de equilibrar el crecimiento con la sostenibilidad. Las autoridades buscan mejorar la infraestructura y diversificar la oferta turística para que más barrios puedan beneficiarse del auge del sector.</p>
-                    <p>Con estos números, Nueva York demuestra que sigue siendo un destino de referencia a nivel mundial, un lugar que combina historia, cultura y modernidad, atrayendo año tras año a millones de personas que dejan su huella en la Gran Manzana.</p>
-                    <a href="https://www.eleconomista.es/transportes-turismo/noticias/13144088/12/24/el-turismo-impulsa-la-economia-de-nueva-york-con-un-impacto-de-76000-millones-de-euros-en-2024.html">Link a la noticia</a>
-                </article>
-            </div>
-        </div>
+    </section>
     </div>
+    <footer>
+        <p>&copy; 2025 Turismo en NYC - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
 
