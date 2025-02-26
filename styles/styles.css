@@ -1,102 +1,302 @@
+/* Estilos generales */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #faf4dc;
-    color: #133b46;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC;
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+.header {
+    background: #2C3E50;
+    color: white;
     text-align: center;
+    padding: 20px 0;
 }
 
-header {
-    background: #a9cbc3;
-    color: #133b46;
-    padding: 20px;
-    font-size: 1.5em;
+.header__title {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
+.header__subtitle {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Contenedor principal */
 .container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 3fr 1fr;
     gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
     padding: 20px;
 }
 
-main {
-    flex: 2;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-}
-
+/* Menú */
 .menu {
+    background: #F8F8F8;
+    padding: 15px;
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
-    background: #133b46;
-    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
 }
 
-.menu a {
-    color: #faf4dc;
+.menu__link {
+    color: #4A4A4A;
     text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu__link:hover {
+    color: #E74C3C;
+}
+
+/* Contenido Principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .section {
-    padding: 20px;
     background: white;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.gallery img, .fichas img {
-    width: 100%;
-    max-width: 250px;
-    margin: 10px;
-    border-radius: 10px;
+.section__title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
 }
-.noticias  {
+
+/* Galería */
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mantiene siempre dos columnas */
+    gap: 15px;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery__image:hover {
+    transform: scale(1.05);
+}
+
+/* Lugares de interés */
+.places__grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     gap: 20px;
 }
-.noticias h2{
-    flex: 1;
-    background: #a9cbc3;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
+
+.place-card {
+    background: #F8F8F8;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.noticias p {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    background: #f4f4f4;
+.place-card__image-container {
+    position: relative;
 }
 
-form input, form textarea, form button {
+.place-card__image {
     width: 100%;
-    margin: 10px 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.place-card__title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Texto con sombra para contrastar*/
+    z-index: 1;
+}
+
+.place-card__content {
+    padding: 15px;
+}
+
+.place-card__description {
+    font-size: 1rem;
+    color: #4A4A4A;
+    margin-top: 10px;
+}
+/* Mapa */
+.map__iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+}
+
+/* Transporte */
+.transport__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.transport__item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.transport__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Formulario de contacto */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact__input, .contact__textarea {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #a9cbc3;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-footer {
-    background: #d8a34d;
-    color: #133b46;
+.contact__button {
+    background: #1ABC9C;
+    color: white;
     padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
+.contact__button:hover {
+    background: #16A085;
+}
 
+/* Noticias */
+.news {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
 
+.news__article {
+    margin-bottom: 20px;
+}
+
+.news__title {
+    font-size: 1.3rem;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.news__link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #E74C3C;
+    text-decoration: none;
+}
+
+.news__link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer__text {
+    margin: 0;
+}
+
+/* Botón "Volver arriba" */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1ABC9C;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+}
+
+.back-to-top:hover {
+    background: #16A085;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        width: 100%;
+        order: -1;
+        position: static;
+    }
+
+    .back-to-top {
+        display: block;
+    }
+
+    .gallery__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .place-card__image {
+        height: 150px;
+    }
+
+    .place-card__title {
+        font-size: 1.3rem;
+    }
+}

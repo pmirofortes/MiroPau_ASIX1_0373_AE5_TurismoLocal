@@ -8,74 +8,143 @@
     <link rel="icon" href="./images/favicon.ico">
 </head>
 <body>
-    <header>
-        <h1>Nueva York</h1>
-        <p>Descubre la ciudad que nunca duerme</p>
+    <header class="header">
+        <h1 class="header__title">Nueva York</h1>
+        <p class="header__subtitle">Descubre la ciudad que nunca duerme</p>
     </header>
-    <nav class="menu">
-        <a href="#gallery">Galería</a>
-        <a href="#fichas">Lugares de interés</a>
-        <a href="#mapa">Mapa</a>
-        <a href="#barrios">Barrios</a>
-        <a href="#transporte">Transporte</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    
     <div class="container">
-        <main>
-        <section id="gallery" class="section">
-            <h2>Galería de imágenes</h2>
-            <div class="gallery">
-                <img src="./images/empire_state.jpg" alt="Empire State Building">
-                <img src="./images/statue_liberty.jpg" alt="Estatua de la Libertad">
-                <img src="./images/central_park.jpg" alt="Central Park">
-                <img src="./images/times_square.jpg" alt="Times Square">
-            </div>
+        <nav class="menu">
+            <h2>Menu</h2>
+            <a class="menu__link" href="#gallery">Galería</a>
+            <a class="menu__link" href="#fichas">Lugares de interés</a>
+            <a class="menu__link" href="#mapa">Mapa</a>
+            <a class="menu__link" href="#transporte">Transporte</a>
+            <a class="menu__link" href="#contacto">Contacto</a>
+        </nav>
+        
+        <main class="main-content">
+            <section id="gallery" class="section">
+                <h2 class="section__title">Galería de imágenes</h2>
+                <div class="gallery__grid">
+                    <img class="gallery__image" src="./images/Galeria/aerea_nyc.jpg">
+                    <img class="gallery__image" src="./images/Galeria/brooklyn_bridge.jpg">
+                    <img class="gallery__image" src="./images/Galeria/grand_central.jpg">
+                    <img class="gallery__image" src="./images/Galeria/guggenheim.jpg">
+                </div>
+            </section>
+
+            <section id="fichas" class="section">
+                <h2 class="section__title">Lugares de interés</h2>
+                <div class="places__grid">
+                    <div class="place-card">
+                        <div class="place-card__image-container">
+                            <img class="place-card__image" src="./images/Lugares_Interes/empire_state.jpg" alt="Empire State Building">
+                            <h3 class="place-card__title">Empire State Building</h3>
+                        </div>
+                        <div class="place-card__content">
+                            <p class="place-card__description">Uno de los rascacielos más icónicos del mundo, con vistas impresionantes de la ciudad. No te pierdas el mirador en la planta 86.</p>
+                        </div>
+                    </div>
+                    <div class="place-card">
+                        <div class="place-card__image-container">
+                            <img class="place-card__image" src="./images/Lugares_Interes/statue_liberty.jpg" alt="Estatua de la Libertad">
+                            <h3 class="place-card__title">Estatua de la Libertad</h3>
+                        </div>
+                        <div class="place-card__content">
+                            <p class="place-card__description">Un símbolo de libertad y uno de los monumentos más famosos de Estados Unidos. Puedes visitarla en ferry desde Battery Park.</p>
+                        </div>
+                    </div>
+                    <div class="place-card">
+                        <div class="place-card__image-container">
+                            <img class="place-card__image" src="./images/Lugares_Interes/central_park.jpg" alt="Central Park">
+                            <h3 class="place-card__title">Central Park</h3>
+                        </div>
+                        <div class="place-card__content">
+                            <p class="place-card__description">El pulmón verde de Nueva York, perfecto para pasear, hacer deporte o relajarse. No te pierdas el lago y el famoso Strawberry Fields.</p>
+                        </div>
+                    </div>
+                    <div class="place-card">
+                        <div class="place-card__image-container">
+                            <img class="place-card__image" src="./images/Lugares_Interes/times_square.jpg" alt="Times Square">
+                            <h3 class="place-card__title">Times Square</h3>
+                        </div>
+                        <div class="place-card__content">
+                            <p class="place-card__description">El corazón de Manhattan, conocido por sus luces brillantes y su ambiente vibrante. Ideal para compras, teatros y restaurantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="mapa" class="section">
+                <h2 class="section__title">Mapa de la ciudad</h2>
+                <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1698765634470!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+
+            <section id="transporte" class="section">
+                <h2 class="section__title">Cómo moverse por la ciudad de Nueva York</h2>
+                <p class="section__description">Nueva York ofrece diversas opciones de transporte para moverse por la ciudad de manera eficiente y cómoda. Aquí te presentamos las principales:</p>
+                <ul class="transport__list">
+                    <li class="transport__item">
+                        <img class="transport__image" src="./images/Transporte/autobus.jpg" alt="Autobús">
+                        <h3>Autobús</h3>
+                        <p>Los autobuses de la MTA cubren toda la ciudad y son una opción económica para desplazarse. Puedes pagar con la tarjeta MetroCard.</p>
+                    </li>
+                    <li class="transport__item">
+                        <img class="transport__image" src="./images/Transporte/metro.jpg" alt="Metro">
+                        <h3>Metro</h3>
+                        <p>El metro de Nueva York es uno de los más grandes y antiguos del mundo. Funciona las 24 horas del día y es la forma más rápida de moverse por la ciudad.</p>
+                    </li>
+                    <li class="transport__item">
+                        <img class="transport__image" src="./images/Transporte/taxi.jpg" alt="Taxi">
+                        <h3>Taxi</h3>
+                        <p >Los taxis amarillos son un ícono de Nueva York. Puedes detener uno en la calle o reservarlo a través de aplicaciones móviles.</p>
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="contacto" class="section">
+                <h2 class="section__title">Contacto</h2>
+                <form class="contact__form" action="https://formspree.io/f/xqaebrkn" method="post">
+                    <input class="contact__input" type="text" name="nombre" placeholder="Nombre" required>
+                    <input class="contact__input" type="email" name="mail" placeholder="Email" required>
+                    <textarea class="contact__textarea" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button class="contact__button" type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        
+        <section class="news">
+            <h2 class="section__title">Noticias</h2>
+            <article class="news__article">
+                <h3 class="news__title">Nueva York aumentará el salario mínimo en 2025</h3>
+                <p>El alcalde de Nueva York, <strong>Eric Adams</strong>, ha anunciado el cierre del centro de procesamiento para inmigrantes ubicado en el histórico <strong>Hotel Roosevelt</strong> antes de junio de 2025.</p>
+        
+                <p>Desde su apertura en 2023, este centro ha atendido a más de <strong>173,000 migrantes</strong>. La decisión se debe a la disminución en la llegada de solicitantes de asilo y busca reducir costos en la gestión de refugios.</p>
+        
+                <p>Sin embargo, defensores de los inmigrantes expresan preocupación por el acceso a servicios tras el cierre. Además, la ciudad enfrenta desafíos adicionales debido a la reciente suspensión de fondos federales por parte de FEMA, lo que ha llevado a una demanda contra la Administración Trump.</p>
+        
+                <p>A pesar de las dificultades, las autoridades locales aseguran su compromiso de apoyar a los solicitantes de asilo en su integración y futuro en Estados Unidos.</p>
+                <a class="news__link" href="https://elpais.com/us/migracion/2025-02-24/nueva-york-anuncia-el-cierre-del-centro-de-inmigrantes-del-famoso-hotel-roosevelt.html">Leer más</a>
+            </article>
+            <article class="news__article">
+                <h3 class="news__title">Elon Musk quiere construir el Transatlantic Tunnel entre Nueva York y Londres con trenes de levitación magnética y por “mil veces menos dinero”</h3>
+                <p>Elon Musk ha planteado una ambiciosa propuesta para construir un <strong>túnel transatlántico</strong> que conectaría <strong>Nueva York y Londres</strong> mediante <strong>trenes de levitación magnética</strong>. Según el empresario, esta tecnología permitiría reducir los costos del proyecto "mil veces menos" en comparación con las estimaciones actuales, lo que haría posible su realización en un futuro no tan lejano.</p>
+        
+                <p>La idea se basa en trenes que viajarían a altísimas velocidades dentro de un túnel submarino, eliminando la fricción con las vías gracias a la levitación magnética y reduciendo la resistencia del aire mediante un sistema de vacío parcial, similar al concepto de <strong>Hyperloop</strong>.</p>
+        
+                <p>Sin embargo, la propuesta ha generado dudas entre expertos en ingeniería y transporte, ya que un proyecto de esta magnitud requeriría una inversión multimillonaria, una infraestructura sin precedentes y un nivel de innovación aún no desarrollado. Además, existen desafíos logísticos como la construcción de un túnel de más de <strong>5.500 km bajo el océano Atlántico</strong> y la gestión de la seguridad en un sistema de transporte completamente nuevo.</p>
+        
+                <p>A pesar de esto, Musk ha asegurado que su equipo está explorando soluciones tecnológicas para hacerlo viable en el futuro, lo que ha despertado gran interés en la comunidad científica y entre inversores tecnológicos. </p>
+                <a class="news__link" href="https://as.com/us/actualidad/elon-musk-quiere-construir-el-transatlantic-tunnel-entre-nueva-york-y-londres-con-trenes-de-levitacion-magnetica-y-por-mil-veces-menos-dinero-n/">Leer más</a>
+            </article>
         </section>
-        <section id="fichas" class="section">
-            <h2>Lugares de interés</h2>
-            <div class="fichas">
-                <div><h3>Empire State Building</h3><img src="./images/empire_state.jpg"></div>
-                <div><h3>Estatua de la Libertad</h3><img src="./images/statue_liberty.jpg"></div>
-                <div><h3>Central Park</h3><img src="./images/central_park.jpg"></div>
-                <div><h3>Times Square</h3><img src="./images/times_square.jpg"></div>
-            </div>
-        </section>
-        <section id="mapa" class="section">
-            <h2>Mapa de la ciudad</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45957.93511760493!2d-73.9880665284829!3d40.764408326941385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e1!3m2!1ses!2ses!4v1739449820360!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
-        </section>
-        <section id="barrios" class="section">
-            <h2>Barrios más visitados</h2>
-            <ul>
-                <li>Soho</li>
-                <li>Tribeca</li>
-                <li>Chelsea</li>
-                <li>Bronx</li>
-                <li>Staten Island</li>
-            </ul>
-        </section>
-        <section id="contacto" class="section">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/xqaebrkn" method="post">
-                <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="email" name="mail" placeholder="Email" required>
-                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <section class ="noticias">
-        <h2>Noticias</h2>
-        <div class="noticia">
-            <h3>Empire State Building remodelado</h3>
-            <p>El edificio ha sido remodelado para mejorar su diseño y seguridad.</p>
-            <a href="#">Leer más</a>
-        </div>
-    </section>
     </div>
-    <footer>
-        <p>&copy; 2025 Turismo en NYC - Todos los derechos reservados</p>
+    
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 Turismo en NYC - Todos los derechos reservados</p>
     </footer>
+
+    <a href="#top" class="back-to-top">↑ Volver arriba</a>
 </body>
 </html>
-
